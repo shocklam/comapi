@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SsiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'JCHI.dbo.adObjectCache' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="adObjectCache">
+          <Key>
+            <PropertyRef Name="distinguishedName" />
+          </Key>
+          <Property Name="distinguishedName" Type="varchar" MaxLength="512" Nullable="false" />
+          <Property Name="cn" Type="varchar" MaxLength="64" />
+          <Property Name="objectCategory" Type="varchar" MaxLength="512" />
+          <Property Name="objectClass" Type="varchar" MaxLength="64" />
+          <Property Name="name" Type="varchar" MaxLength="64" />
+          <Property Name="objectSID" Type="varchar" MaxLength="64" />
+          <Property Name="sn" Type="varchar" MaxLength="64" />
+          <Property Name="givenName" Type="varchar" MaxLength="64" />
+          <Property Name="sAMAccountName" Type="varchar" MaxLength="64" />
+          <Property Name="description" Type="varchar(max)" />
+          <Property Name="info" Type="varchar(max)" />
+          <Property Name="mail" Type="varchar" MaxLength="50" />
+          <Property Name="managedBy" Type="varchar" MaxLength="256" />
+          <Property Name="location" Type="varchar" MaxLength="100" />
+          <Property Name="department" Type="varchar" MaxLength="255" />
+          <Property Name="departmentNumber" Type="varchar" MaxLength="16" />
+          <Property Name="uceduUCID" Type="varchar" MaxLength="16" />
+          <Property Name="userAccountControl" Type="bigint" />
+          <Property Name="operatingSystem" Type="varchar" MaxLength="80" />
+          <Property Name="whenCreated" Type="datetime" />
+          <Property Name="whenChanged" Type="datetime" />
+          <Property Name="TS" Type="datetime" />
+          <Property Name="isEnabled" Type="bit" />
+        </EntityType>
+        <EntityType Name="ComputerInfo">
+          <Key>
+            <PropertyRef Name="hostname" />
+          </Key>
+          <Property Name="hostname" Type="varchar" MaxLength="24" Nullable="false" />
+          <Property Name="properties" Type="varchar" MaxLength="2000" />
+          <Property Name="info" Type="varchar" MaxLength="2000" />
+          <Property Name="SN" Type="varchar" MaxLength="64" />
+          <Property Name="TS" Type="datetime" />
+        </EntityType>
+        <EntityType Name="EventLog">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Controller" Type="varchar" MaxLength="32" />
+          <Property Name="Action" Type="varchar" MaxLength="32" />
+          <Property Name="Account" Type="varchar" MaxLength="32" />
+          <Property Name="Info" Type="varchar" MaxLength="256" />
+          <Property Name="TS" Type="datetime" />
+          <Property Name="AffectedObjects" Type="varchar" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="SI_CheckIn">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Hostname" Type="varchar" MaxLength="24" Nullable="false" />
+          <Property Name="Username" Type="varchar" MaxLength="32" Nullable="false" />
+          <Property Name="IP" Type="varchar" MaxLength="15" />
+          <Property Name="OS" Type="varchar" MaxLength="64" />
+          <Property Name="ServicePack" Type="varchar" MaxLength="10" />
+          <Property Name="Meta" Type="varchar" MaxLength="1024" />
+          <Property Name="TS" Type="datetime" />
+        </EntityType>
+        <EntityContainer Name="SsiModelStoreContainer">
+          <EntitySet Name="ComputerInfo" EntityType="Self.ComputerInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EventLog" EntityType="Self.EventLog" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SI_CheckIn" EntityType="Self.SI_CheckIn" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="adObjectCache" EntityType="Self.adObjectCache" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [adObjectCache].[distinguishedName] AS [distinguishedName], 
+    [adObjectCache].[cn] AS [cn], 
+    [adObjectCache].[objectCategory] AS [objectCategory], 
+    [adObjectCache].[objectClass] AS [objectClass], 
+    [adObjectCache].[name] AS [name], 
+    [adObjectCache].[objectSID] AS [objectSID], 
+    [adObjectCache].[sn] AS [sn], 
+    [adObjectCache].[givenName] AS [givenName], 
+    [adObjectCache].[sAMAccountName] AS [sAMAccountName], 
+    [adObjectCache].[description] AS [description], 
+    [adObjectCache].[info] AS [info], 
+    [adObjectCache].[mail] AS [mail], 
+    [adObjectCache].[managedBy] AS [managedBy], 
+    [adObjectCache].[location] AS [location], 
+    [adObjectCache].[department] AS [department], 
+    [adObjectCache].[departmentNumber] AS [departmentNumber], 
+    [adObjectCache].[uceduUCID] AS [uceduUCID], 
+    [adObjectCache].[userAccountControl] AS [userAccountControl], 
+    [adObjectCache].[operatingSystem] AS [operatingSystem], 
+    [adObjectCache].[whenCreated] AS [whenCreated], 
+    [adObjectCache].[whenChanged] AS [whenChanged], 
+    [adObjectCache].[TS] AS [TS], 
+    [adObjectCache].[isEnabled] AS [isEnabled]
+    FROM [dbo].[adObjectCache] AS [adObjectCache]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SsiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ComputerInfo">
+          <Key>
+            <PropertyRef Name="hostname" />
+          </Key>
+          <Property Name="hostname" Type="String" MaxLength="24" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="properties" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+          <Property Name="info" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+          <Property Name="SN" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="TS" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="JCHIEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ComputerInfoes" EntityType="Self.ComputerInfo" />
+          <EntitySet Name="EventLogs" EntityType="SsiModel.EventLog" />
+          <EntitySet Name="adObjectCaches" EntityType="SsiModel.adObjectCache" />
+          <EntitySet Name="SI_CheckIn" EntityType="SsiModel.SI_CheckIn" />
+        </EntityContainer>
+        <EntityType Name="EventLog">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Controller" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+          <Property Name="Action" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+          <Property Name="Account" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+          <Property Name="Info" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+          <Property Name="TS" Type="DateTime" Precision="3" />
+          <Property Name="AffectedObjects" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="adObjectCache">
+          <Key>
+            <PropertyRef Name="distinguishedName" />
+          </Key>
+          <Property Name="distinguishedName" Type="String" Nullable="false" MaxLength="512" FixedLength="false" Unicode="false" />
+          <Property Name="cn" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="objectCategory" Type="String" MaxLength="512" FixedLength="false" Unicode="false" />
+          <Property Name="objectClass" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="objectSID" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="sn" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="givenName" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="sAMAccountName" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="info" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="mail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="managedBy" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+          <Property Name="location" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="department" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="departmentNumber" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="uceduUCID" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="userAccountControl" Type="Int64" />
+          <Property Name="operatingSystem" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="whenCreated" Type="DateTime" Precision="3" />
+          <Property Name="whenChanged" Type="DateTime" Precision="3" />
+          <Property Name="TS" Type="DateTime" Precision="3" />
+          <Property Name="isEnabled" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="SI_CheckIn">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Hostname" Type="String" Nullable="false" MaxLength="24" FixedLength="false" Unicode="false" />
+          <Property Name="Username" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="false" />
+          <Property Name="IP" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="OS" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="ServicePack" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Meta" Type="String" MaxLength="1024" FixedLength="false" Unicode="false" />
+          <Property Name="TS" Type="DateTime" Precision="3" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SsiModelStoreContainer" CdmEntityContainer="JCHIEntities">
+          <EntitySetMapping Name="ComputerInfoes">
+            <EntityTypeMapping TypeName="SsiModel.ComputerInfo">
+              <MappingFragment StoreEntitySet="ComputerInfo">
+                <ScalarProperty Name="hostname" ColumnName="hostname" />
+                <ScalarProperty Name="properties" ColumnName="properties" />
+                <ScalarProperty Name="info" ColumnName="info" />
+                <ScalarProperty Name="SN" ColumnName="SN" />
+                <ScalarProperty Name="TS" ColumnName="TS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EventLogs">
+            <EntityTypeMapping TypeName="SsiModel.EventLog">
+              <MappingFragment StoreEntitySet="EventLog">
+                <ScalarProperty Name="AffectedObjects" ColumnName="AffectedObjects" />
+                <ScalarProperty Name="TS" ColumnName="TS" />
+                <ScalarProperty Name="Info" ColumnName="Info" />
+                <ScalarProperty Name="Account" ColumnName="Account" />
+                <ScalarProperty Name="Action" ColumnName="Action" />
+                <ScalarProperty Name="Controller" ColumnName="Controller" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="adObjectCaches">
+            <EntityTypeMapping TypeName="SsiModel.adObjectCache">
+              <MappingFragment StoreEntitySet="adObjectCache">
+                <ScalarProperty Name="isEnabled" ColumnName="isEnabled" />
+                <ScalarProperty Name="TS" ColumnName="TS" />
+                <ScalarProperty Name="whenChanged" ColumnName="whenChanged" />
+                <ScalarProperty Name="whenCreated" ColumnName="whenCreated" />
+                <ScalarProperty Name="operatingSystem" ColumnName="operatingSystem" />
+                <ScalarProperty Name="userAccountControl" ColumnName="userAccountControl" />
+                <ScalarProperty Name="uceduUCID" ColumnName="uceduUCID" />
+                <ScalarProperty Name="departmentNumber" ColumnName="departmentNumber" />
+                <ScalarProperty Name="department" ColumnName="department" />
+                <ScalarProperty Name="location" ColumnName="location" />
+                <ScalarProperty Name="managedBy" ColumnName="managedBy" />
+                <ScalarProperty Name="mail" ColumnName="mail" />
+                <ScalarProperty Name="info" ColumnName="info" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="sAMAccountName" ColumnName="sAMAccountName" />
+                <ScalarProperty Name="givenName" ColumnName="givenName" />
+                <ScalarProperty Name="sn" ColumnName="sn" />
+                <ScalarProperty Name="objectSID" ColumnName="objectSID" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="objectClass" ColumnName="objectClass" />
+                <ScalarProperty Name="objectCategory" ColumnName="objectCategory" />
+                <ScalarProperty Name="cn" ColumnName="cn" />
+                <ScalarProperty Name="distinguishedName" ColumnName="distinguishedName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SI_CheckIn">
+            <EntityTypeMapping TypeName="SsiModel.SI_CheckIn">
+              <MappingFragment StoreEntitySet="SI_CheckIn">
+                <ScalarProperty Name="TS" ColumnName="TS" />
+                <ScalarProperty Name="Meta" ColumnName="Meta" />
+                <ScalarProperty Name="ServicePack" ColumnName="ServicePack" />
+                <ScalarProperty Name="OS" ColumnName="OS" />
+                <ScalarProperty Name="IP" ColumnName="IP" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Hostname" ColumnName="Hostname" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

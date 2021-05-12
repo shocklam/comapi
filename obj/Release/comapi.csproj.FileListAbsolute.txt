@@ -1,0 +1,178 @@
+P:\Stuff\PublicAPI\bin\PublicAPI.dll.config
+P:\Stuff\PublicAPI\bin\PublicAPI.dll
+P:\Stuff\PublicAPI\bin\PublicAPI.pdb
+P:\Stuff\PublicAPI\bin\roslyn\csc.exe
+P:\Stuff\PublicAPI\bin\roslyn\csc.exe.config
+P:\Stuff\PublicAPI\bin\roslyn\csc.rsp
+P:\Stuff\PublicAPI\bin\roslyn\csi.exe
+P:\Stuff\PublicAPI\bin\roslyn\csi.exe.config
+P:\Stuff\PublicAPI\bin\roslyn\csi.rsp
+P:\Stuff\PublicAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+P:\Stuff\PublicAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+P:\Stuff\PublicAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+P:\Stuff\PublicAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+P:\Stuff\PublicAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+P:\Stuff\PublicAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+P:\Stuff\PublicAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+P:\Stuff\PublicAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+P:\Stuff\PublicAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+P:\Stuff\PublicAPI\bin\roslyn\Microsoft.Managed.Core.targets
+P:\Stuff\PublicAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+P:\Stuff\PublicAPI\bin\roslyn\Microsoft.Win32.Primitives.dll
+P:\Stuff\PublicAPI\bin\roslyn\System.AppContext.dll
+P:\Stuff\PublicAPI\bin\roslyn\System.Collections.Immutable.dll
+P:\Stuff\PublicAPI\bin\roslyn\System.Console.dll
+P:\Stuff\PublicAPI\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+P:\Stuff\PublicAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+P:\Stuff\PublicAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+P:\Stuff\PublicAPI\bin\roslyn\System.Globalization.Calendars.dll
+P:\Stuff\PublicAPI\bin\roslyn\System.IO.Compression.dll
+P:\Stuff\PublicAPI\bin\roslyn\System.IO.Compression.ZipFile.dll
+P:\Stuff\PublicAPI\bin\roslyn\System.IO.FileSystem.dll
+P:\Stuff\PublicAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+P:\Stuff\PublicAPI\bin\roslyn\System.Net.Http.dll
+P:\Stuff\PublicAPI\bin\roslyn\System.Net.Sockets.dll
+P:\Stuff\PublicAPI\bin\roslyn\System.Reflection.Metadata.dll
+P:\Stuff\PublicAPI\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+P:\Stuff\PublicAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+P:\Stuff\PublicAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+P:\Stuff\PublicAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+P:\Stuff\PublicAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+P:\Stuff\PublicAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+P:\Stuff\PublicAPI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+P:\Stuff\PublicAPI\bin\roslyn\System.ValueTuple.dll
+P:\Stuff\PublicAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+P:\Stuff\PublicAPI\bin\roslyn\System.Xml.XmlDocument.dll
+P:\Stuff\PublicAPI\bin\roslyn\System.Xml.XPath.dll
+P:\Stuff\PublicAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+P:\Stuff\PublicAPI\bin\roslyn\vbc.exe
+P:\Stuff\PublicAPI\bin\roslyn\vbc.exe.config
+P:\Stuff\PublicAPI\bin\roslyn\vbc.rsp
+P:\Stuff\PublicAPI\bin\roslyn\VBCSCompiler.exe
+P:\Stuff\PublicAPI\bin\roslyn\VBCSCompiler.exe.config
+P:\Stuff\PublicAPI\bin\Antlr3.Runtime.dll
+P:\Stuff\PublicAPI\bin\EntityFramework.dll
+P:\Stuff\PublicAPI\bin\EntityFramework.SqlServer.dll
+P:\Stuff\PublicAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+P:\Stuff\PublicAPI\bin\Microsoft.Web.Infrastructure.dll
+P:\Stuff\PublicAPI\bin\Newtonsoft.Json.dll
+P:\Stuff\PublicAPI\bin\System.Net.Http.Formatting.dll
+P:\Stuff\PublicAPI\bin\System.Web.Helpers.dll
+P:\Stuff\PublicAPI\bin\System.Web.Http.dll
+P:\Stuff\PublicAPI\bin\System.Web.Http.WebHost.dll
+P:\Stuff\PublicAPI\bin\System.Web.Mvc.dll
+P:\Stuff\PublicAPI\bin\System.Web.Optimization.dll
+P:\Stuff\PublicAPI\bin\System.Web.Razor.dll
+P:\Stuff\PublicAPI\bin\System.Web.WebPages.Deployment.dll
+P:\Stuff\PublicAPI\bin\System.Web.WebPages.dll
+P:\Stuff\PublicAPI\bin\System.Web.WebPages.Razor.dll
+P:\Stuff\PublicAPI\bin\WebGrease.dll
+P:\Stuff\PublicAPI\bin\EntityFramework.xml
+P:\Stuff\PublicAPI\bin\EntityFramework.SqlServer.xml
+P:\Stuff\PublicAPI\bin\Newtonsoft.Json.xml
+P:\Stuff\PublicAPI\bin\System.Net.Http.Formatting.xml
+P:\Stuff\PublicAPI\bin\System.Web.Helpers.xml
+P:\Stuff\PublicAPI\bin\System.Web.Http.xml
+P:\Stuff\PublicAPI\bin\System.Web.Http.WebHost.xml
+P:\Stuff\PublicAPI\bin\System.Web.Mvc.xml
+P:\Stuff\PublicAPI\bin\System.Web.Optimization.xml
+P:\Stuff\PublicAPI\bin\System.Web.Razor.xml
+P:\Stuff\PublicAPI\bin\System.Web.WebPages.xml
+P:\Stuff\PublicAPI\bin\System.Web.WebPages.Deployment.xml
+P:\Stuff\PublicAPI\bin\System.Web.WebPages.Razor.xml
+P:\Stuff\PublicAPI\bin\Antlr3.Runtime.pdb
+P:\Stuff\PublicAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+P:\Stuff\PublicAPI\obj\Release\comapi.csprojAssemblyReference.cache
+P:\Stuff\PublicAPI\obj\Release\comapi.csproj.CoreCompileInputs.cache
+P:\Stuff\PublicAPI\obj\Release\comapi.csproj.CopyComplete
+P:\Stuff\PublicAPI\obj\Release\PublicAPI.dll
+P:\Stuff\PublicAPI\obj\Release\PublicAPI.pdb
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\PublicAPI.dll.config
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\PublicAPI.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\PublicAPI.pdb
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\csc.exe
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\csc.exe.config
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\csc.rsp
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\csi.exe
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\csi.exe.config
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\csi.rsp
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\System.AppContext.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\System.Console.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\System.IO.Compression.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\System.Net.Http.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\System.Net.Sockets.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\System.ValueTuple.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\System.Xml.XPath.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\vbc.exe
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\vbc.exe.config
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\vbc.rsp
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\VBCSCompiler.exe
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\Antlr3.Runtime.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\EntityFramework.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\EntityFramework.SqlServer.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\Newtonsoft.Json.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\System.Net.Http.Formatting.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\System.Web.Helpers.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\System.Web.Http.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\System.Web.Http.WebHost.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\System.Web.Mvc.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\System.Web.Optimization.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\System.Web.Razor.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\System.Web.WebPages.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\System.Web.WebPages.Razor.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\WebGrease.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\EntityFramework.xml
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\EntityFramework.SqlServer.xml
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\Newtonsoft.Json.xml
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\System.Net.Http.Formatting.xml
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\System.Web.Helpers.xml
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\System.Web.Http.xml
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\System.Web.Http.WebHost.xml
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\System.Web.Mvc.xml
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\System.Web.Optimization.xml
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\System.Web.Razor.xml
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\System.Web.WebPages.xml
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\System.Web.WebPages.Razor.xml
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\Antlr3.Runtime.pdb
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\obj\Release\comapi.csprojAssemblyReference.cache
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\obj\Release\comapi.csproj.CoreCompileInputs.cache
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\obj\Release\comapi.csproj.CopyComplete
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\obj\Release\PublicAPI.dll
+C:\Users\fatherj\OneDrive - University of Cincinnati\Visual Studio Projects\comapi\obj\Release\PublicAPI.pdb

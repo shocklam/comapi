@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SsiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ComputerInfo">
+    <Key>
+      <PropertyRef Name="hostname" />
+    </Key>
+    <Property Name="hostname" Type="String" MaxLength="24" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="properties" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="info" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="SN" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="TS" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityContainer Name="JCHIEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ComputerInfoes" EntityType="Self.ComputerInfo" />
+    <EntitySet Name="EventLogs" EntityType="SsiModel.EventLog" />
+    <EntitySet Name="adObjectCaches" EntityType="SsiModel.adObjectCache" />
+  </EntityContainer>
+  <EntityType Name="EventLog">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Controller" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="Action" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="Account" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="Info" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Name="TS" Type="DateTime" Precision="3" />
+    <Property Name="AffectedObjects" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="adObjectCache">
+    <Key>
+      <PropertyRef Name="distinguishedName" />
+    </Key>
+    <Property Name="distinguishedName" Type="String" Nullable="false" MaxLength="512" FixedLength="false" Unicode="false" />
+    <Property Name="cn" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="objectCategory" Type="String" MaxLength="512" FixedLength="false" Unicode="false" />
+    <Property Name="objectClass" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="objectSID" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="sn" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="givenName" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="sAMAccountName" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="description" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="info" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="mail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="managedBy" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Name="location" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="department" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="departmentNumber" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="uceduUCID" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="userAccountControl" Type="Int64" />
+    <Property Name="operatingSystem" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="whenCreated" Type="DateTime" Precision="3" />
+    <Property Name="whenChanged" Type="DateTime" Precision="3" />
+    <Property Name="TS" Type="DateTime" Precision="3" />
+  </EntityType>
+</Schema>

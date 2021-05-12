@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SsiModelStoreContainer" CdmEntityContainer="JCHIEntities">
+    <EntitySetMapping Name="ComputerInfoes">
+      <EntityTypeMapping TypeName="SsiModel.ComputerInfo">
+        <MappingFragment StoreEntitySet="ComputerInfo">
+          <ScalarProperty Name="hostname" ColumnName="hostname" />
+          <ScalarProperty Name="properties" ColumnName="properties" />
+          <ScalarProperty Name="info" ColumnName="info" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="TS" ColumnName="TS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EventLogs">
+      <EntityTypeMapping TypeName="SsiModel.EventLog">
+        <MappingFragment StoreEntitySet="EventLog">
+          <ScalarProperty Name="AffectedObjects" ColumnName="AffectedObjects" />
+          <ScalarProperty Name="TS" ColumnName="TS" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="Account" ColumnName="Account" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="Controller" ColumnName="Controller" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="adObjectCaches">
+      <EntityTypeMapping TypeName="SsiModel.adObjectCache">
+        <MappingFragment StoreEntitySet="adObjectCache">
+          <ScalarProperty Name="TS" ColumnName="TS" />
+          <ScalarProperty Name="whenChanged" ColumnName="whenChanged" />
+          <ScalarProperty Name="whenCreated" ColumnName="whenCreated" />
+          <ScalarProperty Name="operatingSystem" ColumnName="operatingSystem" />
+          <ScalarProperty Name="userAccountControl" ColumnName="userAccountControl" />
+          <ScalarProperty Name="uceduUCID" ColumnName="uceduUCID" />
+          <ScalarProperty Name="departmentNumber" ColumnName="departmentNumber" />
+          <ScalarProperty Name="department" ColumnName="department" />
+          <ScalarProperty Name="location" ColumnName="location" />
+          <ScalarProperty Name="managedBy" ColumnName="managedBy" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="info" ColumnName="info" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="sAMAccountName" ColumnName="sAMAccountName" />
+          <ScalarProperty Name="givenName" ColumnName="givenName" />
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="objectSID" ColumnName="objectSID" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="objectClass" ColumnName="objectClass" />
+          <ScalarProperty Name="objectCategory" ColumnName="objectCategory" />
+          <ScalarProperty Name="cn" ColumnName="cn" />
+          <ScalarProperty Name="distinguishedName" ColumnName="distinguishedName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SsiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'JCHI.dbo.adObjectCache' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="adObjectCache">
+    <Key>
+      <PropertyRef Name="distinguishedName" />
+    </Key>
+    <Property Name="distinguishedName" Type="varchar" MaxLength="512" Nullable="false" />
+    <Property Name="cn" Type="varchar" MaxLength="64" />
+    <Property Name="objectCategory" Type="varchar" MaxLength="512" />
+    <Property Name="objectClass" Type="varchar" MaxLength="64" />
+    <Property Name="name" Type="varchar" MaxLength="64" />
+    <Property Name="objectSID" Type="varchar" MaxLength="64" />
+    <Property Name="sn" Type="varchar" MaxLength="64" />
+    <Property Name="givenName" Type="varchar" MaxLength="64" />
+    <Property Name="sAMAccountName" Type="varchar" MaxLength="64" />
+    <Property Name="description" Type="varchar(max)" />
+    <Property Name="info" Type="varchar(max)" />
+    <Property Name="mail" Type="varchar" MaxLength="50" />
+    <Property Name="managedBy" Type="varchar" MaxLength="256" />
+    <Property Name="location" Type="varchar" MaxLength="100" />
+    <Property Name="department" Type="varchar" MaxLength="255" />
+    <Property Name="departmentNumber" Type="varchar" MaxLength="16" />
+    <Property Name="uceduUCID" Type="varchar" MaxLength="16" />
+    <Property Name="userAccountControl" Type="bigint" />
+    <Property Name="operatingSystem" Type="varchar" MaxLength="80" />
+    <Property Name="whenCreated" Type="datetime" />
+    <Property Name="whenChanged" Type="datetime" />
+    <Property Name="TS" Type="datetime" />
+    <Property Name="isEnabled" Type="bit" />
+  </EntityType>
+  <EntityType Name="ComputerInfo">
+    <Key>
+      <PropertyRef Name="hostname" />
+    </Key>
+    <Property Name="hostname" Type="varchar" MaxLength="24" Nullable="false" />
+    <Property Name="properties" Type="varchar" MaxLength="2000" />
+    <Property Name="info" Type="varchar" MaxLength="2000" />
+    <Property Name="SN" Type="varchar" MaxLength="64" />
+    <Property Name="TS" Type="datetime" />
+  </EntityType>
+  <EntityType Name="EventLog">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Controller" Type="varchar" MaxLength="32" />
+    <Property Name="Action" Type="varchar" MaxLength="32" />
+    <Property Name="Account" Type="varchar" MaxLength="32" />
+    <Property Name="Info" Type="varchar" MaxLength="256" />
+    <Property Name="TS" Type="datetime" />
+    <Property Name="AffectedObjects" Type="varchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="SI_CheckIn">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Hostname" Type="varchar" MaxLength="24" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="IP" Type="varchar" MaxLength="15" />
+    <Property Name="OS" Type="varchar" MaxLength="64" />
+    <Property Name="ServicePack" Type="varchar" MaxLength="10" />
+    <Property Name="Meta" Type="varchar" MaxLength="1024" />
+    <Property Name="TS" Type="datetime" />
+  </EntityType>
+  <EntityContainer Name="SsiModelStoreContainer">
+    <EntitySet Name="ComputerInfo" EntityType="Self.ComputerInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EventLog" EntityType="Self.EventLog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SI_CheckIn" EntityType="Self.SI_CheckIn" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="adObjectCache" EntityType="Self.adObjectCache" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [adObjectCache].[distinguishedName] AS [distinguishedName], 
+    [adObjectCache].[cn] AS [cn], 
+    [adObjectCache].[objectCategory] AS [objectCategory], 
+    [adObjectCache].[objectClass] AS [objectClass], 
+    [adObjectCache].[name] AS [name], 
+    [adObjectCache].[objectSID] AS [objectSID], 
+    [adObjectCache].[sn] AS [sn], 
+    [adObjectCache].[givenName] AS [givenName], 
+    [adObjectCache].[sAMAccountName] AS [sAMAccountName], 
+    [adObjectCache].[description] AS [description], 
+    [adObjectCache].[info] AS [info], 
+    [adObjectCache].[mail] AS [mail], 
+    [adObjectCache].[managedBy] AS [managedBy], 
+    [adObjectCache].[location] AS [location], 
+    [adObjectCache].[department] AS [department], 
+    [adObjectCache].[departmentNumber] AS [departmentNumber], 
+    [adObjectCache].[uceduUCID] AS [uceduUCID], 
+    [adObjectCache].[userAccountControl] AS [userAccountControl], 
+    [adObjectCache].[operatingSystem] AS [operatingSystem], 
+    [adObjectCache].[whenCreated] AS [whenCreated], 
+    [adObjectCache].[whenChanged] AS [whenChanged], 
+    [adObjectCache].[TS] AS [TS], 
+    [adObjectCache].[isEnabled] AS [isEnabled]
+    FROM [dbo].[adObjectCache] AS [adObjectCache]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
